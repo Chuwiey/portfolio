@@ -2,7 +2,7 @@ Simple Screen Scraper via Bookmarklet
 ======================================
 
 You can add this by creating a bookmark with the following as the url:
-<pre>javascript: void((function () { var e = document.createElement('script'); e.setAttribute('type', 'text/javascript'); e.setAttribute('charset', 'UTF-8'); e.setAttribute('src', 'https://raw.github.com/bfhappy/portfoilio/master/JavaScript/scraper.js?r=' + Math.random() * 99999999); document.body.appendChild(e) })());</pre>
+<pre>javascript: void((function () { var e = document.createElement('script'); e.setAttribute('type', 'text/javascript'); e.setAttribute('charset', 'UTF-8'); e.setAttribute('src', 'https://raw.github.com/bfhappy/portfolio/master/JavaScript/scraper.js?r=' + Math.random() * 99999999); document.body.appendChild(e) })());</pre>
 and then dragging it to your bookmarks bar.
 
 Once you do that, you can surf to any site, click on it, and it will show you a small box, similar to what Facebook shows you when you share a url.
