@@ -131,9 +131,9 @@
                         if ($('.scrp_image').length > 1) {
                             $('.scrp_image[data-id="0"]').parent()
                                 .append(
-                                '<a class="scrp_arrow scrp_button clear" data-id="left" ><</a>')
+                                '<a class="scrp_button clear" data-id="left" ><</a>')
                                 .append(
-                                '<a class="scrp_arrow scrp_button" data-id="right">></a>');
+                                '<a class="scrp_button" data-id="right">></a>');
                         }
 
                         //Determine title (two shorthand if statements)
@@ -169,7 +169,7 @@
                 //Event Handler : clicks and stuff
                 eventHandler: {
                     init: function(content) {
-                        $('.scrp_arrow').on('click', function(e) {
+                        $('.scrp_button').on('click', function(e) {
                             scrp.f.eventHandler.imgSlider(e, content);
                         });
                         $('#scrp_close').on('click', function(e) {
@@ -177,7 +177,7 @@
                         });
                     },
                     //If the user closes the scraper box we need to bring back the objects and videos we hid
-                    closeBox:function () {
+                    closeBox:function () { //TODO: Create a close button
                         $('#scrp_box').remove();
                         if (scrp.c.tmpEmbedParent) {
                             scrp.c.tmpEmbedParent.append(scrp.c.tmpEmbed);
